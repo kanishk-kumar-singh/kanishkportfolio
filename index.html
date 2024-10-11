@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Kanishk Singh</title>
+  </head>
+<head>
+  <!-- Include FontAwesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+</head>
+
+<head>
+  <!-- bootstrap css cdn link  -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+  />
+
+  <!-- custom css file -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- bootstrap icon cdn link  -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+  />
+
+  <!-- for adding animation to website we have use AOS library 
+  AOS Library css file cdn link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- jquery cdn link  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Project</a>
+            </li>
+          </ul>
+        </div>
+        <a href="#contact" class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</a>
+      </div>
+    </nav>
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Kanishk Singh</span>
+          </h2>
+          <p class="text-muted">
+            I am currently pursuing a Bachelor of Technology (B.Tech) in Computer Science and Engineering from VIT Bhopal, with current CGPA of 8.1,
+            I'm A Web Developer having 1 years of experience in expertise of
+            creating website with the help of HTML, CSS and javascript. I have a foundational understanding of Data Structures and Algorithms, and I'm currently enhancing my skills through practice and applying them to solve basic problems.
+          </p>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="Image.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Provide Wide Range of <br />
+          Digital Services
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="service-icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Design</h4>
+              <p class="text-muted">
+                I specialize in creating visually appealing, responsive, and user-centered websites. My design process focuses on understanding user needs and delivering intuitive, interactive experiences that are optimized for performance and accessibility.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="service-icon2.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Development</h4>
+              <p class="text-muted">
+                I specialize in front-end web development, creating efficient, scalable, and user-friendly websites and web applications. I ensure that every website I build is responsive, fast, and optimized for modern browsers and devices.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Debugging</h4>
+              <p class="text-muted">
+                I have a strong proficiency in web debugging, ensuring that websites and applications function smoothly by identifying, troubleshooting, and resolving issues. I focus on optimizing performance, improving functionality, and ensuring a seamless user experience.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress html-css">
+                  <span class="progress-value html-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">HTML & CSS</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress javascript">
+                  <span class="progress-value javascript-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress dsa">
+                  <span class="progress-value dsa-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">Data Structure & Algorithm</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3  ms-md-0">
+                <div class="circular-progress reactjs">
+                  <span class="progress-value reactjs-progress">0%</span>
+                </div>
+                <br>
+                <span class="text">ReactJS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 skill-detail">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Skills</small>
+            <h3>Beautiful & Unique Digital Experiences</h3>
+            <p class="text-muted">
+              I have strong skills in web development, including HTML, CSS, and JavaScript, which enable me to create responsive and user-friendly websites. Additionally, I possess a solid understanding of Data Structures and Algorithms, allowing me to solve complex problems efficiently and optimize performance in my projects.
+            </p>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <!-- here download attribute is used for adding download functionality to button  -->
+              <a
+                href="finalresumects.pdf"
+                download="MyResume"
+                style="text-decoration: none;color: #fff;"
+                >Download CV</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="project" id="project">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Project</h3>
+      </div>
+      <br>
+      <section class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <div class="card-body text-center">
+                <h4 class="card-title">Text Editor App</h4>
+                <span class="badge bg-secondary badge-pill">c#</span>
+                <span class="badge bg-secondary badge-pill">WPF</span>
+                <span class="badge bg-secondary badge-pill mb-2">App</span><br />
+                <p>Developed a desktop application using WPF (Windows Presentation Foundation) to create a simple text editor
+                with functionalities to save and open files. Utilized SaveFileDialog and OpenFileDialog to allow users to choose file paths for saving and opening .txt files.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <div class="card-body text-center">
+                <h4 class="card-title">Cash Flow Minimizer</h4>
+                <span class="badge bg-secondary badge-pill">C++</span>
+                <span class="badge bg-secondary badge-pill">OOPS</span>
+                <span class="badge bg-secondary badge-pill mb-2"></span>
+                <br />
+                <p>The System that minimizes the number of transactions among multiple banks in different corners of the world that use the different modes of payment. There is one world bank (with all payment modes) to act as an intermediary between banks that have no common mode of payment. </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <div class="card-body text-center">
+                <h4 class="card-title">Facial Recognition System</h4>
+                <span class="badge bg-secondary badge-pill">Python</span>
+                <span class="badge bg-secondary badge-pill">OpenCV</span>
+                ><br />
+                <p>Developed a facial recognition attendance system using python leveraging OpenCV and dlib for real-time face
+                detection and recognition. Streamlined attendance tracking by automating the identification process and
+                maintaining accurate records in a user-friendly interface. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <div class="card-body text-center">
+                <h4 class="card-title">Portfolio Webpage </h4>
+                <span class="badge bg-secondary badge-pill">HTML & CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
+                <p>Developed a personal portfolio website using HTML, CSS, and JavaScript to showcase my web development skills. The site features a responsive design, interactive elements, and highlights my projects, skills, and professional background.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <div class="card-body text-center">
+                <h4 class="card-title">TicTacToe Game</h4>
+                <span class="badge bg-secondary badge-pill">HTML & CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span><br />
+                <p>Developed a classic tic-tac-toe game using HTML, CSS, JavaScript. The project features single and multiplayer
+                modes, allowing players to play against the computer or another player. The game has efficient algorithm which
+                ensure and responsive gameplay.</p>
+              </div>
+            </div>
+          </div>
+      </section>      
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>VIT Bhopal University, Kothri kalan 466114</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+91 9555392424</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>kanishkcoding@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" >
+          <form action="https://formspree.io/f/mqakzrvw" 
+             method="POST">
+            <div class="contact-form">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="mobile"
+                  placeholder="Mobile No."
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  placeholder="Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" type="submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#project">Project</a>
+        <div class="vr"></div>
+        <!-- <a href="#blog">Blog</a>
+        <div class="vr"></div> -->
+        <a href="#contact">Contact</a>
+      </div>
+      <br>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/kanishk-kumar-singh-a78b84222/" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/kanishk1408/?__pwa=1" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/kanishk-kumar-singh" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <hr class="text-muted my-4" />
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="script.js"></script>
+    
+  </body>
+</html>
